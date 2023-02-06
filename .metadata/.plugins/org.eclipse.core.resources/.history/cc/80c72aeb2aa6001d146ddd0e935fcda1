@@ -1,0 +1,58 @@
+package TestingAutomation.TestingTopSop;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LandingPage {
+	
+	WebDriver driver;
+	
+	public LandingPage (WebDriver driver)
+	{
+		
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	//WebElement User = driver.findElement(By.cssSelector("a[href='Login.aspx']"));
+	
+	@FindBy(css = "a[href='Login.aspx']")
+	WebElement User;
+	
+	@FindBy(id="ctl00_ContentPlaceHolder1_txtPassword")
+	WebElement Pass;
+	
+	@FindBy(id="ctl00_ContentPlaceHolder1_btnLogIn")
+	WebElement Submit;
+	
+	@FindBy (id="ctl00_ContentPlaceHolder1_txtUsername")
+	WebElement UserName;
+	
+	
+	
+	
+	
+	
+	public void clickNajava()
+	{
+		User.click();
+	}
+	public void loginApp(String email, String pass)
+	{
+		UserName.sendKeys(email);
+		Pass.sendKeys(pass);
+		Submit.click();
+		
+	}
+	
+	public void goTo()
+	{
+		driver.get("https://e-tinex.mk/");
+	}
+	
+	
+
+}

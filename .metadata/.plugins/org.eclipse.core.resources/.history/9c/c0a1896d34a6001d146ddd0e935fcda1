@@ -1,0 +1,84 @@
+package TestingAutomation.TestingTopSop;
+
+import java.time.Duration;
+
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TopSopAutomationJava extends BaseTest{
+
+	public WebDriver driver;
+	public LandingPage landingPage;
+	public ProductPage productpage;
+	public String user;
+	public String pass;
+	
+	@Test
+	public void EndToEndTestIfNaplataCanBeProcesed()
+	{
+	
+		String user = "dejanovski_a@yahoo.com";
+		String pass = "ubavovreme1";
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
+		driver.manage().window().maximize();
+		LandingPage landingPage = new LandingPage (driver);
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		ProductPage productpage = new ProductPage(driver);
+		productpage.clickOsnovni();
+		productpage.closeCookies();
+		productpage.addToCard();
+		productpage.clickCart();
+		Assert.assertEquals(productpage.NaplataKopce.getText(), "НАПЛАТА");
+		driver.quit();
+
+	}
+	@Test
+	public void EndToEndTestBelow600Den()
+	{
+		
+		LandingPage landingPage = new LandingPage (driver);
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		ProductPage productpage = new ProductPage(driver);
+		productpage.clickOsnovni();
+		productpage.closeCookies();
+		productpage.addToCard();
+		productpage.clickCart();
+		Assert.assertEquals(productpage.NaplataKopce.getText(), "НАПЛАТА");
+		productpage.clickNaplata();
+		productpage.ClickProdolzi();
+		
+		Alert alert = driver.switchTo().alert();
+		Assert.assertTrue(alert.getText().contains("600 денари"));
+		
+		driver.quit();
+
+	}
+	@BeforeMethod
+	public void BeforeMetod ()
+	{
+		user = "dejanovski_a@yahoo.com";
+		pass = "ubavovreme1";
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
+		driver.manage().window().maximize();
+		
+	}
+	
+
+}

@@ -1,0 +1,46 @@
+package TestingAutomation.TestingTopSop;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ProductPage {
+
+WebDriver driver;
+	
+	public ProductPage (WebDriver driver)
+	{
+		
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy (css = "a[href='default.aspx?b=31']")
+	WebElement OsnovniProizvodi;
+	
+	@FindBy (id = "closeCookiesMob")
+	WebElement Cookies;
+	
+	@FindBy (css = ".block block_6")
+	List <WebElement> Elements;
+	
+	@FindBy (css = ".desc_grid1")
+	WebElement Naslov;
+	
+	
+	public void clickOsnovni()
+	{
+		OsnovniProizvodi.click();
+	}
+	
+	public void closeCookies()
+	{
+		Cookies.click();
+	}
+	
+	
+}

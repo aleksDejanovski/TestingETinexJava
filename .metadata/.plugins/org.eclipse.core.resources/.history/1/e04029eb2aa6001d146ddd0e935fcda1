@@ -1,0 +1,35 @@
+package TestingAutomation.TestingTopSop;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TopSopAutomationJava {
+
+	public static void main(String[] args) {
+		String user = "dejanovski_a@yahoo.com";
+		String pass = "ubavovreme1";
+		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
+		driver.manage().window().maximize();
+		LandingPage landingPage = new LandingPage (driver);
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		ProductPage productpage = new ProductPage(driver);
+		productpage.clickOsnovni();
+		productpage.closeCookies();
+		productpage.addToCard();
+		productpage.clickCart();
+		
+		driver.quit();
+
+	}
+
+}
