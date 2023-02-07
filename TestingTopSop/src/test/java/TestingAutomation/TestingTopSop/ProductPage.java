@@ -47,6 +47,12 @@ WebDriver driver;
 	@FindBy (css = ".title_item_koshnichka")
 	WebElement TitleOfProduct;
 	
+	@FindBy (css = ".grid_category1")
+	List <WebElement> ListProducts;
+	
+	@FindBy (css = ".naslov_produkt")
+	WebElement NaslovProdukt;
+	
 	public void clickOsnovni()
 	{
 		OsnovniProizvodi.click();
@@ -84,6 +90,17 @@ WebDriver driver;
 	public void ClickMleko()
 	{
 		Mleko.click();
+	}
+	
+	public WebElement SelectProduct()
+	{
+		return ListProducts.stream().filter(product -> 
+		product.findElement(By.className("desc_grid1")).getText().equalsIgnoreCase("МАСЛО маслиново Extra virgin KOSTA D'ORO 0.75мл")).findFirst().orElse(null);
+	}
+	public WebElement SelectProductAsUserEnters(String productName)
+	{
+		return ListProducts.stream().filter(product -> 
+		product.findElement(By.className("desc_grid1")).getText().equalsIgnoreCase(productName)).findFirst().orElse(null);
 	}
 	
 

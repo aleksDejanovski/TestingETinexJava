@@ -5,7 +5,7 @@
     <classes>
       <class name="TestingAutomation.TestingTopSop.TopSopAutomationJava">
         <methods>
-          <include name="MlecniProizvodiCheck"/>
+          <include name="PickProductFromOsnovniProizvodi"/>
           <include name="BeforeMetod"/>
           <include name="AfterMethod"/>
         </methods>

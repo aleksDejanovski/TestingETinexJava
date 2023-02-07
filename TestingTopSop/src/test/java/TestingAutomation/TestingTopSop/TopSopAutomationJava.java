@@ -104,5 +104,38 @@ public class TopSopAutomationJava{
 		Thread.sleep(2000);
 		Assert.assertEquals(productpage.TitleOfProduct.getText(), "МЛЕКО +D3 витамин 3.2%м.м. BIMILK 1л.");
 	}
+	@Test
+	public void PickProductFromOsnovniProizvodi()
+	{
+		
+		
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		productpage = new ProductPage(driver);
+		productpage.clickOsnovni();
+		productpage.closeCookies();
+		productpage.SelectProduct().click();
+		Assert.assertTrue(productpage.NaslovProdukt.getText().contains("KOSTA D'ORO 0.75мл"));
+		
+		
+	}
+	@Test
+	public void PickProductAsUserEntersProductName()
+	{
+		
+		//user can enter product in test here bellow
+		String produkt = "МАСЛО маслиново Extra vergine OLITALIA 1л";
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		productpage = new ProductPage(driver);
+		productpage.clickOsnovni();
+		productpage.closeCookies();
+		productpage.SelectProductAsUserEnters(produkt).click();
+		Assert.assertTrue(productpage.NaslovProdukt.getText().contains(produkt));
+		
+	}
+
 
 }
