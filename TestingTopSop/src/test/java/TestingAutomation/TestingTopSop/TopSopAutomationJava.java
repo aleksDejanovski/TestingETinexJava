@@ -27,16 +27,9 @@ public class TopSopAutomationJava{
 	
 		String user = "dejanovski_a@yahoo.com";
 		String pass = "ubavovreme1";
-		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
-		driver.manage().window().maximize();
-		landingPage = new LandingPage (driver);
 		landingPage.goTo();
 		landingPage.clickNajava();
 		landingPage.loginApp(user, pass);
-		productpage = new ProductPage(driver);
 		productpage.clickOsnovni();
 		productpage.closeCookies();
 		productpage.addToCard();
@@ -49,7 +42,7 @@ public class TopSopAutomationJava{
 	public void EndToEndTestBelow600Den()
 	{
 		
-		landingPage = new LandingPage (driver);
+		
 		landingPage.goTo();
 		landingPage.clickNajava();
 		landingPage.loginApp(user, pass);
@@ -76,6 +69,8 @@ public class TopSopAutomationJava{
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
 		driver.manage().window().maximize();
+		landingPage = new LandingPage (driver);
+		productpage = new ProductPage(driver);
 		
 	}
 	@org.testng.annotations.AfterMethod
@@ -88,7 +83,7 @@ public class TopSopAutomationJava{
 	@Test
 	public void InvalidLoginCheck()
 	{
-		LandingPage landingPage = new LandingPage (driver);
+		
 		landingPage.goTo();
 		landingPage.clickNajava();
 		landingPage.loginApp(user, "2313232");

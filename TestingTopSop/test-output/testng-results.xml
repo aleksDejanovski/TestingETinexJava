@@ -2,20 +2,20 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-06T16:54:34 CET" name="Default suite" finished-at="2023-02-06T16:54:46 CET" duration-ms="12113">
+  <suite started-at="2023-02-07T11:11:56 CET" name="Default suite" finished-at="2023-02-07T11:12:21 CET" duration-ms="24911">
     <groups>
     </groups>
-    <test started-at="2023-02-06T16:54:34 CET" name="Default test" finished-at="2023-02-06T16:54:46 CET" duration-ms="12113">
+    <test started-at="2023-02-07T11:11:56 CET" name="Default test" finished-at="2023-02-07T11:12:21 CET" duration-ms="24911">
       <class name="TestingAutomation.TestingTopSop.TopSopAutomationJava">
-        <test-method is-config="true" signature="BeforeMetod()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-06T16:54:34 CET" name="BeforeMetod" finished-at="2023-02-06T16:54:37 CET" duration-ms="3184" status="PASS">
+        <test-method is-config="true" signature="BeforeMetod()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-07T11:11:56 CET" name="BeforeMetod" finished-at="2023-02-07T11:11:59 CET" duration-ms="2988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMetod -->
-        <test-method signature="InvalidLogin()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-06T16:54:37 CET" name="InvalidLogin" finished-at="2023-02-06T16:54:46 CET" duration-ms="8567" status="PASS">
+        <test-method signature="EndToEndTestIfNaplataCanBeProcesed()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-07T11:11:59 CET" name="EndToEndTestIfNaplataCanBeProcesed" finished-at="2023-02-07T11:12:20 CET" duration-ms="21533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidLogin -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-06T16:54:46 CET" name="AfterMethod" finished-at="2023-02-06T16:54:46 CET" duration-ms="303" status="PASS">
+        </test-method> <!-- EndToEndTestIfNaplataCanBeProcesed -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:TestingAutomation.TestingTopSop.TopSopAutomationJava@1e04fa0a]" started-at="2023-02-07T11:12:20 CET" name="AfterMethod" finished-at="2023-02-07T11:12:21 CET" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
