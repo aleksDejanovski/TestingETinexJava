@@ -25,8 +25,7 @@ public class TopSopAutomationJava{
 	public void EndToEndTestIfNaplataCanBeProcesed()
 	{
 	
-		String user = "dejanovski_a@yahoo.com";
-		String pass = "ubavovreme1";
+		
 		landingPage.goTo();
 		landingPage.clickNajava();
 		landingPage.loginApp(user, pass);
@@ -71,6 +70,8 @@ public class TopSopAutomationJava{
 		driver.manage().window().maximize();
 		landingPage = new LandingPage (driver);
 		productpage = new ProductPage(driver);
+		user = "dejanovski_a@yahoo.com";
+		pass = "ubavovreme1";
 		
 	}
 	@org.testng.annotations.AfterMethod
@@ -89,6 +90,19 @@ public class TopSopAutomationJava{
 		landingPage.loginApp(user, "2313232");
 		Assert.assertTrue(landingPage.InvalidLoginText.getText().contains("Грешно корисничко име или лозинка!"));
 	}
-	
+	@Test
+	public void MlecniProizvodiCheck() throws InterruptedException
+	{
+		
+		landingPage.goTo();
+		landingPage.clickNajava();
+		landingPage.loginApp(user, pass);
+		productpage.ClickMlecni();
+		productpage.closeCookies();
+		productpage.ClickMleko();
+		productpage.clickCart();
+		Thread.sleep(2000);
+		Assert.assertEquals(productpage.TitleOfProduct.getText(), "МЛЕКО +D3 витамин 3.2%м.м. BIMILK 1л.");
+	}
 
 }

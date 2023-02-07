@@ -289,3 +289,29 @@
 2023-02-07 11:09:19,423 [Worker-5: Launching TopSopAutomationJava] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
 2023-02-07 11:11:54,489 [Worker-13: Launching TopSopAutomationJava.EndToEndTestIfNaplataCanBeProcesed] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-02-07 11:11:54,490 [Worker-13: Launching TopSopAutomationJava.EndToEndTestIfNaplataCanBeProcesed] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:11:54,493 [Worker-13: Launching TopSopAutomationJava.EndToEndTestIfNaplataCanBeProcesed] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:11:54,493 [Worker-13: Launching TopSopAutomationJava.EndToEndTestIfNaplataCanBeProcesed] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:25:11,972 [Worker-13: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:25:11,972 [Worker-13: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:25:11,975 [Worker-13: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:25:11,976 [Worker-13: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:30:52,211 [Worker-24: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:30:52,211 [Worker-24: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:30:52,214 [Worker-24: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:30:52,214 [Worker-24: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:34:54,032 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:34:54,032 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:34:54,035 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:34:54,035 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:36:09,423 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:36:09,424 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:36:09,431 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:36:09,432 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:38:30,531 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:38:30,532 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:38:30,535 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:38:30,535 [Worker-29: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources
+2023-02-07 11:43:54,418 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:43:54,420 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\main\resources
+2023-02-07 11:43:54,424 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-07 11:43:54,425 [Worker-26: Launching TopSopAutomationJava.MlecniProizvodiCheck] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\AutomationTests\TestingTopSop\src\test\resources

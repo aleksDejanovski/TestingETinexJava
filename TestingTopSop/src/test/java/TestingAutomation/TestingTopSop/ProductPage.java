@@ -25,6 +25,8 @@ WebDriver driver;
 	@FindBy (id = "closeCookiesMob")
 	WebElement Cookies;
 	
+	@FindBy (css = "a[href='default.aspx?b=27']")
+	WebElement MlecniProizvodi;
 
 	
 	@FindBy (css = "div[data-id='609011']")
@@ -38,6 +40,12 @@ WebDriver driver;
 	
 	@FindBy (id = "popup-article-submit")
 	WebElement Prodolzi;
+	
+	@FindBy (css = "div[data-id='610263']")
+	WebElement Mleko;
+	
+	@FindBy (css = ".title_item_koshnichka")
+	WebElement TitleOfProduct;
 	
 	public void clickOsnovni()
 	{
@@ -67,6 +75,15 @@ WebDriver driver;
 	public void ClickProdolzi()
 	{
 		Prodolzi.click();
+	}
+	public void ClickMlecni()
+	{
+		MlecniProizvodi.click();
+	}
+	
+	public void ClickMleko()
+	{
+		Mleko.click();
 	}
 	
 
